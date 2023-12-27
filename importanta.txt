@@ -1,0 +1,4 @@
+amarillo:#ffc63e
+amarillo oscuro:#d6ab00
+negro:#333132
+gris:#3e3e3e
