@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="478.3mm" height="552.3mm" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.0" viewBox="0 0 15205 17557">
+ <defs>
+  <style type="text/css">
+    .fil2 {fill:#EF7F1A;fill-opacity:0.090196}
+    .fil3 {fill:#FFED00;fill-opacity:0.360784}
+    .fil0 {fill:url(#d)}
+    .fil1 {fill:url(#e)}
+    .fil4 {fill:url(#f);fill-opacity:0.529412}
+  </style>
+  <linearGradient id="d" x1="7031.8" x2="7605.9" y1="4038.5" y2="16159" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#B67300" offset="0"/>
+   <stop stop-color="#FFDD15" offset="1"/>
+  </linearGradient>
+  <linearGradient id="e" x1="5414" x2="13433" y1="11419" y2="3159.9" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#F9E306" offset="0"/>
+   <stop stop-color="#D9A60A" offset="1"/>
+  </linearGradient>
+  <radialGradient id="f" cx="73%" cy="46%" r="34%">
+   <stop stop-color="#FEFEFE" offset="0"/>
+   <stop stop-color="#FFED00" offset="1"/>
+  </radialGradient>
+ </defs>
+   <path class="fil0" d="m7603 0l3801 2195 3801 2194v8779l-3801 2195-3801 2194-3802-2194-3801-2195v-8779l3801-2194 3802-2195z"/>
+   <path class="fil1" d="m7603 1469l3165 1827 3165 1828v7310l-3165 1827-3165 1827-3166-1827-3165-1827v-7310l3165-1828 3166-1827z"/>
+   <path class="fil2" d="m7464 1916l2957 1707 2958 1708v3421c-1605 852-3554 1352-5656 1352-2335 0-4480-616-6175-1646v-3127l2958-1708 2958-1707z"/>
+   <path class="fil3" d="m13969 7149v1757c-1717 912-3803 1448-6053 1448-2498 0-4794-660-6608-1763v-1949c1839 1166 4200 1867 6776 1867 2177 0 4201-501 5885-1360z"/>
+   <path class="fil4" d="m7603 1477l3165 1827 3165 1828v3661c-1098 583-2346 1012-3691 1246-2040-1478-3311-3567-3311-5882 0-917 199-1798 566-2619l106-61z"/>
+</svg>
