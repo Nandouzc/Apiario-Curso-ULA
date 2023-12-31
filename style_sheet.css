@@ -1,41 +1,46 @@
 * {
 margin: 0;
 padding: 0;
+border-radius: 20px;
 box-sizing: border-box;
 }
 body{
-    background-color: #717070;
-    color: #0a0a0a;
+    background-color: #ffffff;
 }
 /* Diseño de header */
 #container{
     width: 100%;
+    display: flex;
 }  
 header{
     background-color: #d6ab00;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2363625d' fill-opacity='0.15' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 width: 100%;
-padding-bottom: 10px;
 display: flex;
 border: #333132 solid 5px;
 }
 #logo{
     display: inline-block;
-    padding: 10px;   
+    padding: 10px;
+    width: 120px;
+    height: 120px;   
 }
 #titl{
   display: inline-block;
   line-height: 1.5;
+  margin: 0 0 20px 20px;
 }
 
 nav{
-    display: inline-flex;
+    display: flex;
     width: 33%;
+    align-items:self-end;
+    margin-bottom: 20px; 
 }
 #menu{
     display: inline-flex;
-    margin-left: 40%;
-    list-style-type: none;   
+    margin-left: 25%;
+    list-style-type: none; 
 }
 .nave{
     color:#d6ab00;
@@ -45,22 +50,98 @@ nav{
     border-radius: 10px;
     padding: 10px;
     margin: 8px;
-    
 }
 
 .nave:hover{
     background-color:#5d5d5a;
     color: aliceblue;
+    cursor: pointer;
 }
 /* Diseño del Main */
 main{
-    background-color: #333132;
-    height: 1000px;
+    background-color: #ffffff;
+    height: 7000px;
+    display: flexbox;
+    box-sizing: unset;
 }
 #pr{
     background-image: url(insect_1.jpg);
-    background-size: 100%;
-    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:scroll;
+    height: 520px;
+    display: flex;
+    align-items:end;
+    padding: 50px;
+}
+#product{
+    margin-left: 20%;
+    text-align: center; 
+}
+.prod{
+    color: #ffffff;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+#product .nave{
+    padding: 20px 10px;
+    font-size: 25px;
+}
+#sg{
+    display: flex;
+}
+#benef{
+    background-color:#333132;
+    border: solid rgb(1, 1, 1);
+    border-radius: 20px;
+    width: 60%;
+    height: 700px;
+    padding: 60px 40px;
+    text-align: center;
+    display: inline-block;
+}
+.ben{
+    color: #d6ab00;
+    display: inline-block;
+    font-size: 35px;
+}
+.sec2t{
+    margin: 60px 0 80px 0;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.5;
+}
+#benef .nave{
+    background-color: #d6ab00;
+    color:#333132;
+    font-size: 25px;
+}
+#benef .nave:hover{
+    background-color:#d6ab00ad;
+    color:aliceblue;
+}
+#elegir{
+    background-color:#d6ab00;
+    border: solid rgb(1, 1, 1);
+    border-radius: 20px;
+    width: 60%;
+    height: 700px;
+    padding: 80px 40px;
+    text-align: center;
+    display: inline-block;  
+}
+#elegir .ben{
+    color:#333132;
+    display: inline-block;
+    font-size: 35px;  
+}
+#elegir .nave{
+    font-size: 25px; 
+}
+.sgu{
+    color: #333132;
+    margin: 75px 0 85px 0;
 }
 
 /* Diseño del footer */
