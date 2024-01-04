@@ -1,7 +1,7 @@
 * {
 margin: 0;
 padding: 0;
-border-radius: 20px;
+/* border-radius: 20px; */
 box-sizing: border-box;
 }
 body{
@@ -23,8 +23,7 @@ padding: 5px;
 .logo{
     display: inline-block;
     padding: 10px;
-    width: 120px;
-    height: 120px;   
+    border-radius: 20px;
 }
 .titl{
   display: inline-block;
@@ -61,13 +60,13 @@ nav{
 }
 /* Diseño del Main */
 main{
-    background-color: #ffffff;
+    background-color:#333132;
     display: flexbox;
     box-sizing: unset;
 }
 /* Primera sección  */
 #pr{
-    background-image: url(apiary.jpg);
+    background-image: url(images/apiary.jpg);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     background-attachment:scroll;
@@ -97,7 +96,6 @@ main{
 #benef{
     background-color:#333132;
     border: solid rgb(1, 1, 1);
-    border-radius: 20px;
     width: 60%;
     height: 700px;
     padding: 60px 40px;
@@ -127,7 +125,6 @@ main{
 #elegir{
     background-color:#d6ab00;
     border: solid rgb(1, 1, 1);
-    border-radius: 20px;
     width: 60%;
     height: 700px;
     padding: 80px 40px;
@@ -149,17 +146,19 @@ main{
 /* Tercera sección */
 #trc{
   display: flex;
+  background-color: #ffffff;
 }
 .art{
   display: inline-block;
-  background-color: #fae07c;
+  background-color:#d6ab00;
   height: 400px;
   flex: 1 1 auto;
   margin: 5px 10px;
+  border-radius: 20px;
 }
 /* Primer artículo */
 .p{
-    background-image: url(insect2.jpg);
+    background-image: url(images/insect2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     background-attachment:scroll;
@@ -182,7 +181,7 @@ main{
 }
 /* Segundo artículo */
 .s{
-  background-image: url(apia.jpg);
+  background-image: url(images/apia.jpg);
   background-repeat: no-repeat;
   background-size: 120% 150%;
   background-attachment:scroll;
@@ -202,7 +201,7 @@ main{
 }
 /* Tercer artículo */
 .t{
-    background-image: url(cera.jpg);
+    background-image: url(images/cera.jpg);
   background-repeat: no-repeat;
   background-size: 100% 120%;
   background-attachment:scroll;
@@ -250,7 +249,12 @@ main{
 .bt{
     color:#333132;
     background-color: #d6ab00;
+    font-size: 15px;
 }
+.bt:hover{
+    background-color:#d6ab00ad;
+    color:aliceblue;
+}  
 #sig{
     color: hsl(0, 0%, 100%);
     font-size: 35px;
@@ -312,4 +316,7 @@ footer .fa-brands{
     margin: 20px 20px;
     color:#333132;
     font-size: 50px;
+}
+#copy{
+    margin-top: 20%;
 } 
