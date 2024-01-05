@@ -1,8 +1,7 @@
 * {
-margin: 0;
-padding: 0;
-/* border-radius: 20px; */
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #ffffff;
@@ -11,37 +10,38 @@ body{
 .container{
     width: 100%;
     display: flex;
+    flex-wrap:wrap;
 }  
 header{
     background-color: #d6ab00;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2363625d' fill-opacity='0.15' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-width: 100%;
-display: flex;
-border: #333132 solid 5px;
-padding: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2363625d' fill-opacity='0.15' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 100%;
+    display: flex;
+    border: #333132 solid 5px;
+    padding: 5px;
 }
 .logo{
-    display: inline-block;
+    display: flex;
     padding: 10px;
     border-radius: 20px;
 }
 .titl{
-  display: inline-block;
+  display: flex;
   line-height: 1.5;
   margin: 0 0 20px 20px;
 }
 
-nav{
+/* nav{
     display: flex;
-    width: 33%;
-    align-items:self-end;
-    margin-bottom: 20px; 
-}
+    margin-bottom: 20px;
+    background-color: aqua;
+} */
 .menu{
-    display: inline-flex;
-    margin-left: 25%;
+    display: flex;
     list-style-type: none;
-    flex: 1 1 auto; 
+    flex-flow: row wrap;
+    align-content: end;
+    margin: 2% 3%; 
 }
 .nave{
     color:#d6ab00;
@@ -66,7 +66,7 @@ main{
 }
 /* Primera sección  */
 #pr{
-    background-image: url(images/apiary.jpg);
+    background-image: url(../images/apiary.jpg);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     background-attachment:scroll;
@@ -97,7 +97,6 @@ main{
     background-color:#333132;
     border: solid rgb(1, 1, 1);
     width: 60%;
-    height: 700px;
     padding: 60px 40px;
     text-align: center;
     display: inline-block;
@@ -126,7 +125,6 @@ main{
     background-color:#d6ab00;
     border: solid rgb(1, 1, 1);
     width: 60%;
-    height: 700px;
     padding: 80px 40px;
     text-align: center;
     display: inline-block;  
@@ -158,7 +156,7 @@ main{
 }
 /* Primer artículo */
 .p{
-    background-image: url(images/insect2.jpg);
+    background-image: url(../images/insect2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 120%;
     background-attachment:scroll;
@@ -181,7 +179,7 @@ main{
 }
 /* Segundo artículo */
 .s{
-  background-image: url(images/apia.jpg);
+  background-image: url(../images/apia.jpg);
   background-repeat: no-repeat;
   background-size: 120% 150%;
   background-attachment:scroll;
@@ -201,7 +199,7 @@ main{
 }
 /* Tercer artículo */
 .t{
-    background-image: url(images/cera.jpg);
+    background-image: url(../images/cera.jpg);
   background-repeat: no-repeat;
   background-size: 100% 120%;
   background-attachment:scroll;
