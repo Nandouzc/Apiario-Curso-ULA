@@ -11,6 +11,7 @@ body{
     width: 100%;
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
 }  
 header{
     background-color: #d6ab00;
@@ -19,6 +20,7 @@ header{
     display: flex;
     border: #333132 solid 5px;
     padding: 5px;
+    
 }
 .logo{
     display: flex;
@@ -51,6 +53,7 @@ header{
     border-radius: 10px;
     padding: 10px;
     margin: 8px;
+    margin-bottom: 10px;
 }
 
 .nave:hover{
@@ -61,31 +64,32 @@ header{
 /* Diseño del Main */
 main{
     background-color:#333132;
-    display: flexbox;
     box-sizing: unset;
 }
 /* Primera sección  */
 #pr{
     background-image: url(../images/apiary.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 120%;
+    background-size: 100% 100%;
     background-attachment:scroll;
     width: 100%;
-    aspect-ratio: 768/511;
-    height: 520px;
+    aspect-ratio: auto 744 / 495;
     display: flex;
     align-items:end;
-    padding: 40px 0;
+    
 }
 #product{
-    margin-left: 55%;
-    text-align: center; 
+    margin: 0 2% 18% 50%;
+    text-align: center;  
 }
 .prod{
+    border-radius: 20px;
+    background-color: #5d5d5a4c; 
     color:#faf9f7;
     display: block;
     margin-bottom: 18px;
-    font-size: 50px;
+    font-size: 45px;
+    padding: 5px;
 }
 #product .nave{
     padding: 10px 10px;
@@ -95,17 +99,15 @@ main{
 #sg{
     display: flex;
 }
-#benef{
+.segu{
     background-color:#333132;
     border: solid rgb(1, 1, 1);
-    width: 60%;
+    width: 50%;
     padding: 60px 40px;
     text-align: center;
-    display: inline-block;
 }
 .ben{
     color: #d6ab00;
-    display: inline-block;
     font-size: 35px;
 }
 .sec2t{
@@ -114,30 +116,29 @@ main{
     font-size: 25px;
     line-height: 1.5;
 }
-#benef .nave{
+.segu .nave{
     background-color: #d6ab00;
     color:#333132;
     font-size: 25px;
 }
-#benef .nave:hover{
+.segu .nave:hover{
     background-color:#d6ab00ad;
     color:aliceblue;
 }
-#elegir{
+.s2{
     background-color:#d6ab00;
-    border: solid rgb(1, 1, 1);
-    width: 60%;
-    padding: 80px 40px;
-    text-align: center;
-    display: inline-block;  
+    padding: 80px 40px;  
 }
-#elegir .ben{
-    color:#333132;
-    display: inline-block;
-    font-size: 35px;  
+.s2 .ben{
+    color:#333132;  
 }
-#elegir .nave{
-    font-size: 25px; 
+.s2 .nave{
+    font-size: 25px;
+    background-color: #333132;
+    color: #d6ab00; 
+}
+.s2 .nave:hover{
+ background-color: #5d5d5a;
 }
 .sgu{
     color: #333132;
@@ -149,9 +150,7 @@ main{
   background-color: #ffffff;
 }
 .art{
-  display: inline-block;
   background-color:#d6ab00;
-  height: 400px;
   flex: 1 1 auto;
   margin: 5px 10px;
   border-radius: 20px;
@@ -160,7 +159,8 @@ main{
 .p{
     background-image: url(../images/insect2.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 120%;
+    background-size: 100% 100%;
+    aspect-ratio: auto 529 / 667;
     background-attachment:scroll;
     padding: 10px;  
 }
@@ -183,7 +183,8 @@ main{
 .s{
   background-image: url(../images/apia.jpg);
   background-repeat: no-repeat;
-  background-size: 120% 150%;
+  background-size: 100% 100%;
+  aspect-ratio: 445 / 667;
   background-attachment:scroll;
   padding: 10px;
 }
@@ -203,7 +204,8 @@ main{
 .t{
     background-image: url(../images/cera.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 120%;
+  background-size: 100% 100%;
+  aspect-ratio: auto 500 / 667;
   background-attachment:scroll;
   padding: 10px;
 }
@@ -305,7 +307,7 @@ footer{
 #wa{
     color: #333132;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 40px;
 }
 .social{
     display: flex;
@@ -320,3 +322,18 @@ footer .fa-brands{
 #copy{
     margin-top: 20%;
 } 
+
+@media (max-width:800px) {
+    .prod{
+        font-size: ;
+    }
+    #sg{
+        display: block;
+    }
+   .segu{
+    width: 100%;
+   }
+  #trc{
+    display:block;
+  } 
+}
