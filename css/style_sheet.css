@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: #ffffff;
+    text-decoration: none;
 }
 /* Diseño de header */
 .container{
@@ -24,26 +22,25 @@ header{
 }
 .logo{
     display: flex;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
+    transition: 1s;
+}
+.logo:hover{
+    cursor: pointer;
+    scale: 1.1;
 }
 .titl{
   display: flex;
   line-height: 1.5;
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 5px;
 }
-
-/* nav{
-    display: flex;
-    margin-bottom: 20px;
-    background-color: aqua;
-} */
 .menu{
     display: flex;
     list-style-type: none;
     flex-flow: row wrap;
-    align-content: end;
-    margin: 2% 3%; 
+    align-content:flex-end;
+    margin: 2% 2% 2% 6%;
 }
 .nave{
     color:#d6ab00;
@@ -51,32 +48,38 @@ header{
     background-color: #333132;
     font-size: 20px;
     border-radius: 10px;
-    padding: 10px;
-    margin: 8px;
-    margin-bottom: 10px;
+    padding: 8px;
+    margin: 10px 10px;
+    transition: 0.5s;
 }
-
 .nave:hover{
     background-color:#5d5d5a;
     color: aliceblue;
     cursor: pointer;
 }
-/* Diseño del Main */
-main{
-    background-color:#333132;
-    box-sizing: unset;
+header i{
+    position: absolute;
+    color:#333132;
+    font-size: 30px;
+    display: inline;
+    margin: 15px;
+    top: 0;
+    right: 0;
 }
-/* Primera sección  */
+.menu-btn{
+    display: none;
+}
+/* Diseño del Main Index*/
+
+/* Primera sección-Index */
 #pr{
     background-image: url(../images/apiary.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:scroll;
-    width: 100%;
     aspect-ratio: auto 744 / 495;
     display: flex;
-    align-items:end;
-    
+    align-items:end;   
 }
 #product{
     margin: 0 2% 18% 50%;
@@ -92,10 +95,10 @@ main{
     padding: 5px;
 }
 #product .nave{
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 25px;
 }
-/* Segunda sección */
+/* Segunda sección-Index*/
 #sg{
     display: flex;
 }
@@ -144,18 +147,22 @@ main{
     color: #333132;
     margin: 75px 0 85px 0;
 }
-/* Tercera sección */
+/* Tercera sección-index*/
 #trc{
   display: flex;
-  background-color: #ffffff;
 }
 .art{
   background-color:#d6ab00;
   flex: 1 1 auto;
-  margin: 5px 10px;
+  margin: 10px 10px;
   border-radius: 20px;
+  transition:scale 1s, box-shadow 0.5s;
 }
-/* Primer artículo */
+.art:hover{
+    scale:1.02;
+    box-shadow: 7px 7px 3px rgba(57, 57, 57, 0.472);
+}
+/* Primer artículo-Tercera sección-index*/
 .p{
     background-image: url(../images/insect2.jpg);
     background-repeat: no-repeat;
@@ -179,7 +186,7 @@ main{
     margin: 0 0 30% 70%;
     display: inline-flex;
 }
-/* Segundo artículo */
+/* Segundo artículo-Tercera sección-index*/
 .s{
   background-image: url(../images/apia.jpg);
   background-repeat: no-repeat;
@@ -200,7 +207,7 @@ main{
     margin: 5% 0 0 0;
     display: inline-flex;
 }
-/* Tercer artículo */
+/* Tercer artículo-Tercera sección-index */
 .t{
     background-image: url(../images/cera.jpg);
   background-repeat: no-repeat;
@@ -226,7 +233,7 @@ main{
     margin: 15% 0 0 0;
     display: inline-flex;
 }
-/* Cuarta sección */
+/* Cuarta sección-Index */
 #crt{
     background-color: #333132;
     display: flex;
@@ -247,26 +254,115 @@ main{
     text-align: center;
     border-radius: 10px;
     padding: 10px;
+    transition: 0.5s;
+}
+.in:hover{
+    background-color: #d0b95e;
 }
 .bt{
     color:#333132;
     background-color: #d6ab00;
     font-size: 15px;
+    transition:scale 0.5s;
 }
 .bt:hover{
     background-color:#d6ab00ad;
     color:aliceblue;
+    scale: 1.1;
 }  
 #sig{
     color: hsl(0, 0%, 100%);
     font-size: 35px;
     margin-top: 20px;
 }
-.fa-brands{
+i{
     margin: 40px 20px;
     color: #d6ab00;
     font-size: 50px;
+    transition: 0.8s;
 }
+i:hover{
+    scale: 1.2;
+}
+/* Diseño main-Productos */
+#productos{
+    background-color: #343a40;
+    padding: 20px;
+    align-items: center;
+}
+#productos .segu{
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+#catalog{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(400px, 1fr)
+    ) ;
+    gap: 20px;
+}
+.vender{
+    background-color: #333132;
+    border: 3px #d6ab00 solid;
+    border-radius: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.1fr;
+    color:#d6ab00;
+    gap: 5px;
+}
+.vender img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+.vender form{
+    padding: 5px;
+    font-size:25px;
+  }
+.vender select{
+    width: 115px;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.vender input{
+    width: 80px;
+    font-size: 20px;
+    padding: 5px;
+}
+.vender .btn-comp{
+    width: 110px;
+    font-size: 15px;
+    background-color: #d6ab00;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.vender .info{
+    grid-column-start: span 2;  
+}
+.vender h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.vender p{
+    width: 80%;
+    font-size: 20px;
+}
+.vender .social{
+    grid-column-start: span 2;
+    display: flex;
+    flex-direction: row;
+}
+.vender i{
+    font-size: 50px;
+    margin: 15px;
+}
+
 /* Diseño del footer */
 footer{
     background-color: #d6ab00;
@@ -299,7 +395,7 @@ footer{
     padding-left: 10px;
 }
 #mailto{
-    font-size: 50px;
+    font-size: 40px;
     color:#333132;
     text-decoration: none;
     margin-top: 20px;
@@ -307,14 +403,15 @@ footer{
 #wa{
     color: #333132;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: 20px;
 }
 .social{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer .fa-brands{
+footer i{
     margin: 20px 20px;
     color:#333132;
     font-size: 50px;
@@ -322,11 +419,8 @@ footer .fa-brands{
 #copy{
     margin-top: 20%;
 } 
-
+/* Responsive */
 @media (max-width:800px) {
-    .prod{
-        font-size: ;
-    }
     #sg{
         display: block;
     }
@@ -336,4 +430,51 @@ footer .fa-brands{
   #trc{
     display:block;
   } 
+}
+@media (max-width:600px) {
+    .prod{
+        font-size: 35px;
+    }
+    /* header .nave{
+        display: block;
+    } */
+    header .menu{
+        display: block;
+        background-color: #333132;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        height: 40%;
+        width: 40%;
+        margin: 0;
+        padding: 10px;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+    .menu-btn{
+        display: contents;
+    }
+    header .menu.show{
+        transform: translateX(0px);
+    }
+    header .nave{
+        background-color: #d6ab00;
+        color: #333132;
+        display: block;
+        margin: 20px 0 5px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .cart{
+        margin-right: 60px;
+        font-size: 20px;
+    }
+
+    .fa-bars{
+        position: absolute;
+    }
+    .vender{
+        width: 360px;
+    }
 }
