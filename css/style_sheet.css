@@ -156,7 +156,7 @@ header i{
   flex: 1 1 auto;
   margin: 10px 10px;
   border-radius: 20px;
-  transition:scale 1s, box-shadow 0.5s;
+  transition:scale 1s ease, box-shadow 0.5s;
 }
 .art:hover{
     scale:1.02;
@@ -179,12 +179,11 @@ header i{
 }
 .sec3t{
     width: 50%;
-    margin:45% 25% 0 20%;
-    display: inline-flex;
+    margin:55% 25% 0 20%;    
+    font-size: 20px;
 }
 .sec3bt{
     margin: 0 0 30% 70%;
-    display: inline-flex;
 }
 /* Segundo artículo-Tercera sección-index*/
 .s{
@@ -202,6 +201,10 @@ header i{
     width: 60%;
     color: #ffffff;
     margin-top: 5%;
+    font-size: 20px;
+    background-color: #4c4c4c97;
+    padding:5px;
+    border-radius: 20px;
 }
 .sec3bt2{
     margin: 5% 0 0 0;
@@ -225,9 +228,11 @@ header i{
 .sec3t3{
     width: 70%;
     margin:35% 30% 0 0;
-    background-color: #4c4c4c97;
     color:#d6ab00;
+    font-size: 20px;
+    background-color: #4c4c4c97;
     padding:5px;
+    border-radius: 20px;
 }
 .sec3bt3{
     margin: 15% 0 0 0;
@@ -362,6 +367,35 @@ i:hover{
     font-size: 50px;
     margin: 15px;
 }
+/* Diseño main-Nosotros */
+.one_page{
+    background-color:#333132;
+    padding: 30px;
+    text-align: center;
+}
+.one_page img {
+    width: 700px;
+    border-radius: 20px;
+    margin: 30px;
+}
+.one_page h2{
+    color: #ffffff;
+    font-size: 50px;
+    margin: 30px;
+}
+.one_page p{
+    color: #d6ab00;
+    font-size: 30px;
+    margin: 30px;
+}
+#cita p{
+    font-size: 35px;
+    margin: 200px 0;
+    line-height: 2;
+}
+#cita span{
+    font-size: 25px;
+}
 
 /* Diseño del footer */
 footer{
@@ -476,5 +510,20 @@ footer i{
     }
     .vender{
         width: 360px;
+    }
+    .one_page{
+        padding: 5px;
+    }
+    .one_page img{
+        width: 300px;
+        margin: 5px;
+    }
+    .one_page h2{
+        font-size: 30px;
+        margin: 5px;
+    }
+    .one_page p{
+        font-size: 20px;
+        margin: 5px;
     }
 }
