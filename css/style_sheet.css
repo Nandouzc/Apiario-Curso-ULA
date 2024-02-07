@@ -445,10 +445,13 @@ i:hover{
 }
 iframe{
     margin: 30px;
-    width: 70vw;
+    width: 80vw;
     border-radius: 30px;
 }
-
+.t_area{
+    display: flex;
+    justify-content: center;
+}
 
 /* Diseño del footer */
 footer{
@@ -560,7 +563,6 @@ footer i{
         margin-right: 60px;
         font-size: 20px;
     }
-
     .fa-bars{
         position: absolute;
     }
@@ -571,15 +573,21 @@ footer i{
         padding: 5px;
     }
     .one_page img{
-        width: 330px;
-        
+        width: 330px;   
     }
     .one_page h2{
-        font-size: 30px;
-        
+        font-size: 30px;    
     }
     .one_page p{
+        font-size: 20px;    
+    }
+    .conta input{
         font-size: 20px;
-        
+    }
+    .conta a{
+        font-size: 20px;
+    }
+    .t_area{
+        display: block;
     }
 }
