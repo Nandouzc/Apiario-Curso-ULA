@@ -118,6 +118,7 @@ header i{
     color: #ffffff;
     font-size: 25px;
     line-height: 1.5;
+    text-align: left;
 }
 .segu .nave{
     background-color: #d6ab00;
@@ -130,7 +131,7 @@ header i{
 }
 .s2{
     background-color:#d6ab00;
-    padding: 80px 40px;  
+    padding: 60px 40px;  
 }
 .s2 .ben{
     color:#333132;  
@@ -159,7 +160,6 @@ header i{
   transition:scale 1s ease, box-shadow 0.5s;
 }
 .art:hover{
-    scale:1.02;
     box-shadow: 7px 7px 3px rgba(57, 57, 57, 0.472);
 }
 /* Primer artículo-Tercera sección-index*/
@@ -178,12 +178,15 @@ header i{
     display: flex;
 }
 .sec3t{
-    width: 50%;
-    margin:55% 25% 0 20%;    
-    font-size: 20px;
+    width: 80%;
+    margin:65% 25% 10% 20%;    
+    font-size: 25px;
+    background-color: #4c4c4cb8;
+    border-radius: 20px;
+    padding: 5px;  
 }
 .sec3bt{
-    margin: 0 0 30% 70%;
+    margin: 0 0 0% 70%;
 }
 /* Segundo artículo-Tercera sección-index*/
 .s{
@@ -198,11 +201,11 @@ header i{
     color: #ffffff;
 }
 .sec3t2{
-    width: 60%;
+    width: 50%;
     color: #ffffff;
     margin-top: 5%;
-    font-size: 20px;
-    background-color: #4c4c4c97;
+    font-size: 25px;
+    background-color: #4c4c4cb3;
     padding:5px;
     border-radius: 20px;
 }
@@ -220,7 +223,7 @@ header i{
   padding: 10px;
 }
 .cer{
-    background-color: #4c4c4c97;
+    background-color: #4c4c4cbc;
     padding: 5px;
     text-align: center;
     margin-left: 20%; 
@@ -229,8 +232,8 @@ header i{
     width: 70%;
     margin:35% 30% 0 0;
     color:#d6ab00;
-    font-size: 20px;
-    background-color: #4c4c4c97;
+    font-size: 25px;
+    background-color: #4c4c4cb8;
     padding:5px;
     border-radius: 20px;
 }
@@ -290,17 +293,17 @@ i:hover{
     scale: 1.2;
 }
 /* Diseño main-Productos */
-#productos{
+.productos{
     background-color: #343a40;
     padding: 20px;
     align-items: center;
 }
-#productos .segu{
+.productos .segu{
     width: 100%;
     border-radius: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
-#catalog{
+.catalog{
     display: grid;
     grid-template-columns: repeat(
         auto-fill,
@@ -387,12 +390,13 @@ i:hover{
     color: #d6ab00;
     font-size: 30px;
     margin: 30px;
+    text-align: left;
 }
 #cita p{
     font-size: 35px;
     margin: 100px 0;
     line-height: 2;
-
+    text-align: center;
 }
 #cita span{
     font-size: 25px;
@@ -452,7 +456,48 @@ iframe{
     display: flex;
     justify-content: center;
 }
-
+/* Diseño del main Servicios */
+.servi{
+    background-color:#333132;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    color: #d6ab00;
+    border: #d6ab00 solid 3px;
+}
+.servi img {
+    width: 385px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.servi .social{
+    grid-column-start: span 2;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.servi i{
+    font-size: 40px;
+    margin: 30px 15px 30px 15px;
+}
+.servi .nave{
+    background-color: #d6ab00;
+    color:#333132;
+    font-size: 25px;
+}
+.servi .nave:hover{
+    background-color:#d6ab00ad;
+    color:aliceblue;
+}
+.servi h2{
+    font-size: 35px;
+    margin: 20px;
+}
+.servi p{
+    font-size: 20px;
+    margin: 40px;
+    text-align: left;
+}
 /* Diseño del footer */
 footer{
     background-color: #d6ab00;
@@ -539,7 +584,7 @@ footer i{
         left: 0;
         opacity: 1;
         height: 40%;
-        width: 40%;
+        width: 43%;
         margin: 0;
         padding: 10px;
         transform: translateX(-400px);
@@ -589,5 +634,13 @@ footer i{
     }
     .t_area{
         display: block;
+    }
+    .servi{
+        padding: 5px;
+        width: 360px;
+        margin-left: 0;
+    }
+    .servi img{
+        width: 300px;
     }
 }
