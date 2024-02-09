@@ -376,10 +376,14 @@ i:hover{
     padding: 30px;
     text-align: center;
 }
+.one_page .con{
+    margin: 30px 5px 30px 5px;
+}
 .one_page img {
     width: 700px;
     border-radius: 20px;
-    margin: 30px;
+    margin: 70px 0;
+    border: #d6ab00 solid 2px;
 }
 .one_page h2{
     color: #ffffff;
@@ -425,6 +429,10 @@ i:hover{
     text-align:left;
     flex-wrap: nowrap;
     margin-right: 50px;
+    border: #d6ab00 solid 2px;
+}
+.con h2{
+    text-align: center;
 }
 .conta span{
     font-size: 35px;
@@ -567,6 +575,9 @@ footer i{
   }
   .contac{
     flex-direction: column;
+  }
+  .one_page img{
+    width: 550px;
   }
 }
 @media (max-width:600px) {
